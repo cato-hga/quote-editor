@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  # TODO: continue with css setup - app/assets/stylesheets/config/_variables.scss
+  # TODO: Continue turbo drive chapter section Disabling Turbo Drive - 11/21/2024
   def index
     @quotes = Quote.all
   end
