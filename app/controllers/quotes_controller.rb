@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  # TODO: Continue turbo drive chapter section Disabling Turbo Drive - 11/21/2024
+  # TODO: Section - "Let's now try to submit the form with a blank name by clicking on the "Create Quote" button." Dec 9th 2024
   def index
     @quotes = Quote.all
   end
@@ -35,7 +35,10 @@ class QuotesController < ApplicationController
 
   def destroy
     @quote.destroy
-    redirect_to quotes_path, notice: "Quote was successfully destroyed."
+    respond_to do |format|
+      format.html { redirect_to quotes_path, notice: "Quote was successfully destroyed." }
+      format.turbo_stream
+    end
   end
 
   private
