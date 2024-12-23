@@ -1,6 +1,5 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
-  # TODO: Section - Adding a cancel button - Dec 21st (Turbo Frames and Turbo Stream templates)
   def index
     @quotes = Quote.ordered
   end
