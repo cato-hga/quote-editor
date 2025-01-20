@@ -10,9 +10,9 @@
   margin-bottom: var(--space-m);
   padding: var(--space-xs);
 
-  @include media(tabletAndUp) {
-    padding: var(--space-xs) var(--space-m);
-  }
+  // @include media(tabletAndUp) {
+  //   padding: var(--space-xs) var(--space-m);
+  // }
 
   &__actions {
     display: flex;
