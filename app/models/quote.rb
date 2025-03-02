@@ -13,6 +13,6 @@ class Quote < ApplicationRecord
   broadcasts_to ->(quote) { [quote.company, "quotes"] }, inserts_by: :prepend
 
   belongs_to :company
-  # TODO Now that we added our CSS, let's test the display of our flash messages in the browser. Our flash messages are now styled appropriately!
+  # TODO: Chapter 8 - figure out why empty state is still showing when quotes are present
 end 
 

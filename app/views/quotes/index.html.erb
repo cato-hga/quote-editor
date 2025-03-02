@@ -11,6 +11,8 @@
   <%= turbo_frame_tag Quote.new %>
 
   <%= turbo_frame_tag "quotes" do %>
-    <%= render @quotes %>
+      <%= render "quotes/empty_state" %>
+      <%= render @quotes %>
+    </div>
   <% end %>
 </div>
