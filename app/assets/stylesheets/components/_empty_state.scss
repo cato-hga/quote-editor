@@ -1,8 +1,11 @@
+// app/assets/stylesheets/components/_empty_state.scss
+
 .empty-state {
   padding: var(--space-m);
   border: var(--border);
   border-style: dashed;
   text-align: center;
+
   &__text {
     font-size: var(--font-size-l);
     color: var(--color-text-header);
@@ -14,7 +17,7 @@
     display: none;
 
     &:only-child {
-      display: block;
+      display: revert;
     }
   }
 }
